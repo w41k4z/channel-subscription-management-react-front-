@@ -1,0 +1,36 @@
+.App {
+    height: 100vh;
+    background: linear-gradient(to right, #000000, #400404);
+}
+
+.homePage {
+    background: linear-gradient(to right, #000000, #400404);
+}
+
+.brand-logo {
+    transition: transform 0.5s;
+}
+
+.brand-logo:hover {
+    transform: scale(1.2);
+}
+
+.channel-background {
+    border-radius: 30px;
+}
+
+.explore-button {
+    color: whitesmoke;
+    padding: 7px 15px;
+    border: 1px solid #8a8989;
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.explore-button:hover {
+    /* transform: scale(1.1); */
+    background-color: #200202;
+}
