@@ -8,6 +8,7 @@
 }
 
 .brand-logo {
+    font-size: xx-large !important;
     transition: transform 0.5s;
 }
 
@@ -31,6 +32,5 @@
 }
 
 .explore-button:hover {
-    /* transform: scale(1.1); */
     background-color: #200202;
 }
