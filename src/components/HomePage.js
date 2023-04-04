@@ -4,9 +4,9 @@ const assets = require.context('../assets/img/background', true);
 
 const images = {};
 assets.keys().forEach((filename) => {
-  const image = assets(filename);
-  const name = filename.replace('./', '');
-  images[name] = image;
+    const image = assets(filename);
+    const name = filename.replace('./', '');
+    images[name] = image;
 });
 
 const HomePage = () => {
@@ -34,7 +34,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </nav>
-            
+
             <div className="container mt-4 col-xxl-8 px-4 py-5">
 
                 <div className="row flex-lg-row-reverse align-items-center g-5 py-5 mt-lg-1">
@@ -54,7 +54,7 @@ const HomePage = () => {
                                     <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg2.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg2.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                                    <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg3.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -66,8 +66,6 @@ const HomePage = () => {
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-                        {/* <img src={bg} className="channel-background d-block mx-lg-auto img-fluid rounded" alt="Background Themes" width="700" height="500" loading="lazy" /> */}
                     </div>
 
                     <div className="col-lg-6">
