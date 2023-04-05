@@ -2,6 +2,12 @@
     background: linear-gradient(to right, #000000, #400404);
 }
 
+@media screen and (min-width: 1242px) {
+    .homePage {
+        height: 100%;
+    }
+}
+
 .brand-logo {
     font-size: xx-large !important;
     transition: transform 0.5s;
@@ -38,4 +44,9 @@
 
 .explore-button:hover {
     background-color: #200202;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }

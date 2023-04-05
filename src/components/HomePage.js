@@ -9,7 +9,7 @@ assets.keys().forEach((filename) => {
     images[name] = image;
 });
 
-const HomePage = () => {
+const HomePage = () => {    
     return (
         <div className="homePage text-white">
             <nav className="navbar navbar-expand-md navbar-dark bg-transparent container px-5" aria-label="Fourth navbar example">
@@ -40,30 +40,30 @@ const HomePage = () => {
                 <div className="row flex-lg-row-reverse align-items-center g-5 py-5 mt-lg-1">
                     <div className="col-10 col-sm-8 col-lg-6 m-auto channel-background">
 
-                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div id="carousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div className="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg1.png']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img className="bd-placeholder-img" width="100%" height="100%" src={images['bg1.png']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg2.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                                <div className="carousel-item">
+                                    <img className="bd-placeholder-img" width="100%" height="100%" src={images['bg2.png']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                                 </div>
-                                <div class="carousel-item">
-                                    <img class="bd-placeholder-img" width="100%" height="100%" src={images['bg3.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                                <div className="carousel-item">
+                                    <img className="bd-placeholder-img" width="100%" height="100%" src={images['bg3.jpg']} aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                            <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                            <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
